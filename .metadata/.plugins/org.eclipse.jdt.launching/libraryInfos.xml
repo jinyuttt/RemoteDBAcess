@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="D:\javapath\jre1.8.0_161" version="1.8.0_161">
+<libraryInfo home="D:\javapath\jre1.8.0_161" version="1.8.0_171">
 <bootpath>
 <entry path="D:\javapath\jre1.8.0_161\lib\resources.jar"/>
 <entry path="D:\javapath\jre1.8.0_161\lib\rt.jar"/>
@@ -19,7 +19,7 @@
 <entry path="D:\javapath\jre1.8.0_161\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="D:\javapath\jdk1.8.0_161" version="1.8.0_161">
+<libraryInfo home="D:\javapath\jdk1.8.0_161" version="1.8.0_171">
 <bootpath>
 <entry path="D:\javapath\jdk1.8.0_161\jre\lib\resources.jar"/>
 <entry path="D:\javapath\jdk1.8.0_161\jre\lib\rt.jar"/>

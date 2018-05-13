@@ -13,14 +13,15 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 import java.util.List;
 
+import com.jason.db.DBAcess.DBAcessResult;
+import com.jason.db.JTableCollect.DataColumn;
+import com.jason.db.JTableCollect.DataRow;
+import com.jason.db.JTableCollect.JDataTable;
 
-import DBRPC.DBAcess.DBAcessResult;
 import Files.BufferFile;
-import JTableCollect.DataColumn;
-import JTableCollect.DataRow;
-import JTableCollect.JDataTable;
 
 /**    
  *     
@@ -100,15 +101,13 @@ public class DBBil {
             {
                 try
                 {
-                    JDataTable model=new JDataTable();
-                  // model.Columns=new LinkedList<DataColumn>();
-               // model.rows=new LinkedList<Object>();
+                 JDataTable model=new JDataTable();
                 ResultSetMetaData columns = rs.getMetaData();
                 int size=columns.getColumnCount();
                 //列
-                for(int i=0;i<size;i++)
+                for(int i=1;i<=size;i++)
                 {
-                  DataColumn e=new DataColumn(columns.getColumnName(i));
+                  DataColumn e=new DataColumn(columns.getColumnLabel(i));
                   e.caption=columns.getColumnLabel(i);
                   e.name=columns.getColumnName(i);
                   e.sqlType=columns.getColumnType(i);
@@ -122,7 +121,7 @@ public class DBBil {
                     DataRow row=new DataRow(model);
                     for(int i=0;i<size;i++)
                     {
-                        row.put(model.Columns.get(i).ColumnName,rs.getObject(i));
+                        row.put(model.Columns.get(i).ColumnName,rs.getObject(i+1));
                     }
                     model.Rows.add(row);
                 }
@@ -132,6 +131,13 @@ public class DBBil {
                 {
                     result.error=ex.getMessage();
                 }
+            }
+            try {
+                db.closeDB();
+                rs.close();
+            } catch (SQLException e) {
+              
+                e.printStackTrace();
             }
             return result;
   }

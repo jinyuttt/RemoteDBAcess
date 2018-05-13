@@ -56,16 +56,18 @@ public class DBExecute {
     {
         DBBil db=new DBBil();
         ReturnResult r=null;
-       r=db.queryTable(params);
+        r=db.queryTable(params);
+        System.out.println(r.rows);
         return r;
     }
     @RPCMap(name="querySql")
-    public void recSQLFile(String params)
+    public ReturnResult querySql(String param)
     {
         SQLModel model=new SQLModel();
-        model.sql=params;
-        query(model);
+        model.sql=param;
+        ReturnResult r=  query(model);
         System.out.println("querySql");
+        return r;
     }
     @RPCMap(name="executeDML")
     public ReturnResult executeDML(SQLModel params)

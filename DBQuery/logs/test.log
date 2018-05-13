@@ -1,0 +1,39 @@
+2018-05-13 13:16:01.875 DEBUG com.zaxxer.hikari.HikariConfig 494 setDriverClassName - Driver class org.postgresql.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2018-05-13 13:16:01.890 DEBUG com.zaxxer.hikari.HikariConfig 1038 logConfiguration - HikariPool-1 - configuration:
+2018-05-13 13:16:01.901 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - allowPoolSuspension.............false
+2018-05-13 13:16:01.902 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - autoCommit......................true
+2018-05-13 13:16:01.902 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - catalog.........................none
+2018-05-13 13:16:01.903 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - connectionInitSql...............none
+2018-05-13 13:16:01.903 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - connectionTestQuery............."SELECT 1"
+2018-05-13 13:16:01.904 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - connectionTimeout...............30000
+2018-05-13 13:16:01.904 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - dataSource......................none
+2018-05-13 13:16:01.905 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - dataSourceClassName.............none
+2018-05-13 13:16:01.905 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - dataSourceJNDI..................none
+2018-05-13 13:16:01.907 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - dataSourceProperties............{cacheServerConfiguration=true, useServerPrepStmts=true, elideSetAutoCommits=true, cachePrepStmts=true, rewriteBatchedStatements=true, cacheResultSetMetadata=true, useLocalSessionState=true, maintainTimeStats=false, prepStmtCacheSize=250, prepStmtCacheSqlLimit=2048, password=<masked>, useLocalTransactionState=true}
+2018-05-13 13:16:01.908 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - driverClassName................."org.postgresql.Driver"
+2018-05-13 13:16:01.908 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - healthCheckProperties...........{}
+2018-05-13 13:16:01.909 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - healthCheckRegistry.............none
+2018-05-13 13:16:01.909 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - idleTimeout.....................600000
+2018-05-13 13:16:01.910 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - initializationFailTimeout.......1
+2018-05-13 13:16:01.910 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - isolateInternalQueries..........false
+2018-05-13 13:16:01.911 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - jdbcUrl.........................jdbc:postgresql://localhost:5432/postgres
+2018-05-13 13:16:01.911 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - leakDetectionThreshold..........0
+2018-05-13 13:16:01.912 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - maxLifetime.....................1800000
+2018-05-13 13:16:01.912 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - maximumPoolSize.................30
+2018-05-13 13:16:01.912 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - metricRegistry..................none
+2018-05-13 13:16:01.913 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - metricsTrackerFactory...........none
+2018-05-13 13:16:01.913 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - minimumIdle.....................5
+2018-05-13 13:16:01.913 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - password........................<masked>
+2018-05-13 13:16:01.913 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - poolName........................"HikariPool-1"
+2018-05-13 13:16:01.915 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - readOnly........................false
+2018-05-13 13:16:01.916 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - registerMbeans..................false
+2018-05-13 13:16:01.916 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - scheduledExecutor...............none
+2018-05-13 13:16:01.916 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - schema..........................none
+2018-05-13 13:16:01.916 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - threadFactory...................internal
+2018-05-13 13:16:01.917 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - transactionIsolation............default
+2018-05-13 13:16:01.917 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - username........................"postgres"
+2018-05-13 13:16:01.917 DEBUG com.zaxxer.hikari.HikariConfig 1070 logConfiguration - validationTimeout...............5000
+2018-05-13 13:16:01.918 INFO  com.zaxxer.hikari.HikariDataSource 80 <init> - HikariPool-1 - Starting...
+2018-05-13 13:16:02.131 INFO  com.zaxxer.hikari.pool.PoolBase 521 getAndSetNetworkTimeout - HikariPool-1 - Driver does not support get/set network timeout for connections. (这个 org.postgresql.jdbc42.Jdbc42Connection.getNetworkTimeout() 方法尚未被实作。)
+2018-05-13 13:16:02.153 DEBUG com.zaxxer.hikari.pool.HikariPool 545 checkFailFast - HikariPool-1 - Added connection org.postgresql.jdbc42.Jdbc42Connection@9816741
+2018-05-13 13:16:02.155 INFO  com.zaxxer.hikari.HikariDataSource 82 <init> - HikariPool-1 - Start completed.

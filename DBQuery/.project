@@ -3,6 +3,7 @@
 	<name>DBQuery</name>
 	<comment></comment>
 	<projects>
+		<project>DBAcess</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
